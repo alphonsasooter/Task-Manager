@@ -19,25 +19,6 @@
 
 </div>
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Setup (XAMPP)](#-setup-local-with-xampp)
-- [Database Schema](#-database-schema)
-- [Usage](#-usage)
-- [Security Features](#-security-features)
-- [API Endpoints](#-api-endpoints)
-- [Troubleshooting](#-troubleshooting)
-- [Deployment](#-deployment)
-- [Future Improvements](#-future-improvements)
-- [Contributing](#-contributing)
-- [Author](#-author)
 
 ---
 
@@ -80,22 +61,6 @@ Student Portal is a comprehensive **CRUD (Create, Read, Update, Delete)** web ap
 - ✅ **XSS Protection** - Output sanitization
 - ✅ **CSRF Protection** - Session-based security
 
----
-
-## 📸 Screenshots
-
-<div align="center">
-
-### Login Page
-![Login Page](https://via.placeholder.com/800x450/667eea/ffffff?text=Login+Page)
-
-### Dashboard - Students List
-![Dashboard](https://via.placeholder.com/800x450/764ba2/ffffff?text=Students+Dashboard)
-
-### Add Student Form
-![Add Student](https://via.placeholder.com/800x450/10b981/ffffff?text=Add+Student+Form)
-
-</div>
 
 ---
 
@@ -478,64 +443,7 @@ if (password_verify($input_password, $stored_hash)) {
 - Automatic salt generation
 - Resistant to rainbow table attacks
 
-### SQL Injection Prevention
 
-```php
-// Using prepared statements
-$stmt = $conn->prepare("SELECT * FROM students WHERE email = ?");
-$stmt->bind_param("s", $email);
-$stmt->execute();
-$result = $stmt->get_result();
-```
-
-**Benefits:**
-- Separates SQL code from data
-- Prevents malicious SQL injection
-- Automatic escaping of special characters
-
-### Session Security
-
-```php
-// Starting secure session
-session_start();
-session_regenerate_id(true); // Prevent session fixation
-
-// Checking authentication
-if (!isset($_SESSION['admin_id'])) {
-    header("Location: ../auth/login.php");
-    exit();
-}
-```
-
-**Benefits:**
-- Session hijacking prevention
-- Regular session ID regeneration
-- Secure session destruction on logout
-
-### XSS Prevention
-
-```php
-// Sanitizing output
-echo htmlspecialchars($student_name, ENT_QUOTES, 'UTF-8');
-```
-
-**Benefits:**
-- Prevents JavaScript injection
-- Encodes special HTML characters
-- Safe display of user input
-
-### Input Validation
-
-```php
-// Server-side validation
-function validate_email($email) {
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
-}
-
-function validate_phone($phone) {
-    return preg_match('/^[0-9]{10,15}$/', $phone);
-}
-```
 
 ---
 
@@ -683,160 +591,7 @@ Although this is not a REST API, here are the main endpoints:
 
 </details>
 
----
 
-## 🚀 Deployment
-
-### Option 1: Deploy to Shared Hosting
-
-<details>
-<summary><b>Step-by-step guide for cPanel hosting</b></summary>
-
-1. **Prepare files:**
-   - Zip the entire project folder
-   - Exclude `.git`, `README.md`, and test files
-
-2. **Upload to server:**
-   - Login to cPanel
-   - Go to File Manager
-   - Navigate to `public_html`
-   - Upload and extract zip file
-
-3. **Create database:**
-   - Go to MySQL Databases in cPanel
-   - Create database: `username_student`
-   - Create user and set password
-   - Add user to database with ALL PRIVILEGES
-
-4. **Import database:**
-   - Go to phpMyAdmin
-   - Select the database
-   - Import SQL file or run SQL queries
-
-5. **Update configuration:**
-   - Edit `config/db.php`
-   - Update database credentials:
-   ```php
-   define('DB_HOST', 'localhost');
-   define('DB_USER', 'username_student');
-   define('DB_PASS', 'your_password');
-   define('DB_NAME', 'username_student');
-   ```
-
-6. **Test:**
-   - Visit `https://yourdomain.com/student-portal/`
-   - Login and test all features
-
-</details>
-
-### Option 2: Deploy with Docker
-
-<details>
-<summary><b>Docker deployment guide</b></summary>
-
-1. **Create Dockerfile:**
-
-```dockerfile
-FROM php:8.0-apache
-
-# Install mysqli extension
-RUN docker-php-ext-install mysqli pdo pdo_mysql
-
-# Enable Apache mod_rewrite
-RUN a2enmod rewrite
-
-# Copy application files
-COPY . /var/www/html/
-
-# Set permissions
-RUN chown -R www-data:www-data /var/www/html/ \
-    && chmod -R 755 /var/www/html/
-
-EXPOSE 80
-```
-
-2. **Create docker-compose.yml:**
-
-```yaml
-version: '3.8'
-
-services:
-  web:
-    build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - .:/var/www/html
-    depends_on:
-      - db
-    environment:
-      - DB_HOST=db
-      - DB_USER=root
-      - DB_PASS=rootpass
-      - DB_NAME=student_portal
-
-  db:
-    image: mysql:8.0
-    environment:
-      MYSQL_ROOT_PASSWORD: rootpass
-      MYSQL_DATABASE: student_portal
-    ports:
-      - "3306:3306"
-    volumes:
-      - db_data:/var/lib/mysql
-      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
-
-volumes:
-  db_data:
-```
-
-3. **Run:**
-```bash
-docker-compose up -d
-```
-
-4. **Access:**
-```
-http://localhost:8080
-```
-
-</details>
-
-### Option 3: Deploy to Railway
-
-<details>
-<summary><b>Railway deployment guide</b></summary>
-
-1. **Create Railway account:** https://railway.app
-2. **Install Railway CLI:**
-   ```bash
-   npm install -g @railway/cli
-   ```
-3. **Login:**
-   ```bash
-   railway login
-   ```
-4. **Initialize project:**
-   ```bash
-   railway init
-   ```
-5. **Add MySQL database:**
-   - In Railway dashboard, click "New"
-   - Select "Database" → "MySQL"
-   - Note the connection details
-6. **Update config:**
-   - Use Railway environment variables
-   - Set `DB_HOST`, `DB_USER`, `DB_PASS`, `DB_NAME`
-7. **Deploy:**
-   ```bash
-   railway up
-   ```
-8. **Get URL:**
-   ```bash
-   railway open
-   ```
-
-</details>
 
 ---
 
@@ -883,7 +638,7 @@ Contributions are welcome! Here's how you can help:
 
 1. **Fork the repository**
    ```bash
-   git clone https://github.com/yourusername/student-portal.git
+   git clone https://github.com/alphonsasooter/Task-Manager.git
    ```
 
 2. **Create a feature branch**
@@ -928,46 +683,15 @@ Found a bug? Please open an issue with:
 - Screenshots (if applicable)
 - Your environment (OS, PHP version, etc.)
 
----
+___
 
-## 📜 License
-
-This project is licensed under the MIT License - see below for details:
-
-```
-MIT License
-
-Copyright (c) 2024 Alphonsa Sooter
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-```
-
----
 
 ## 👤 Author
 
 **Alphonsa Sooter**
 
 - 🌐 GitHub: [@alphonsasooter](https://github.com/alphonsasooter)
-- 📧 Email: alphonsa@example.com
-- 💼 LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- 🐦 Twitter: [@yourhandle](https://twitter.com/yourhandle)
+- 📧 Email: alphonsasooter@gmail.com
 
 ---
 
@@ -979,17 +703,6 @@ SOFTWARE.
 - **GitHub** - For hosting this project
 - **Stack Overflow** - For countless solutions
 - **All Contributors** - Thank you for your contributions!
-
----
-
-## 📞 Support
-
-Need help? Here's how to get support:
-
-1. 📖 Check the [Troubleshooting](#-troubleshooting) section
-2. 🔍 Search [existing issues](https://github.com/alphonsasooter/student-portal/issues)
-3. 💬 Open a [new issue](https://github.com/alphonsasooter/student-portal/issues/new)
-4. 📧 Email: alphonsa@example.com
 
 ---
 
@@ -1018,9 +731,9 @@ Need help? Here's how to get support:
 
 If you find this project helpful, please give it a ⭐!
 
-![GitHub stars](https://img.shields.io/github/stars/alphonsasooter/student-portal?style=social)
-![GitHub forks](https://img.shields.io/github/forks/alphonsasooter/student-portal?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/alphonsasooter/student-portal?style=social)
+![GitHub stars](https://img.shields.io/github/stars/alphonsasooter/Task-Manager?style=social)
+![GitHub forks](https://img.shields.io/github/forks/alphonsasooter/Task-Manager?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?style=social)
 
 **Built with ❤️ using PHP, MySQL, and Bootstrap**
 
