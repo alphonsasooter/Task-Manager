@@ -1,0 +1,12 @@
+# Ignore XAMPP temp stuff
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore VS Code settings
+.vscode/
+
+# Ignore uploaded images folder (if you create later)
+uploads/
