@@ -10,7 +10,6 @@
 
 **A clean and beginner-friendly Student Management System**
 
-[Features](#-features) • [Installation](#-setup-local-with-xampp) • [Usage](#-usage) • [Screenshots](#-screenshots) • [Deployment](#-deployment)
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
