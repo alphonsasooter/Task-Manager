@@ -1,4 +1,5 @@
-# 🎓 Student Portal — PHP & MySQL CRUD Web App
+# 🎓 Student Portal — 
+PHP & MySQL CRUD Web App
 
 <div align="center">
 
