@@ -595,10 +595,6 @@ ___
 - [SQL Tutorial](https://www.sqltutorial.org/)
 - [Database Design](https://www.lucidchart.com/pages/database-diagram/database-design)
 
-### Security Resources
-- [OWASP Top 10](https://owasp.org/www-project-top-ten/)
-- [PHP Security Guide](https://phpsecurity.readthedocs.io/)
-- [SQL Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
 
 ---
 
