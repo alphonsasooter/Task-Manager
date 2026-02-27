@@ -590,12 +590,6 @@ ___
 - [PHP The Right Way](https://phptherightway.com/)
 - [W3Schools PHP Tutorial](https://www.w3schools.com/php/)
 
-### MySQL Resources
-- [MySQL Documentation](https://dev.mysql.com/doc/)
-- [SQL Tutorial](https://www.sqltutorial.org/)
-- [Database Design](https://www.lucidchart.com/pages/database-diagram/database-design)
-
-
 ---
 
 <div align="center">
