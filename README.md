@@ -581,14 +581,6 @@ ___
 - **Stack Overflow** - For countless solutions
 - **All Contributors** - Thank you for your contributions!
 
----
-
-## 📚 Learn More
-
-### PHP Resources
-- [PHP Official Documentation](https://www.php.net/docs.php)
-- [PHP The Right Way](https://phptherightway.com/)
-- [W3Schools PHP Tutorial](https://www.w3schools.com/php/)
 
 ---
 
