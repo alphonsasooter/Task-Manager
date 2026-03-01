@@ -570,17 +570,6 @@ ___
 - 🌐 GitHub: [@alphonsasooter](https://github.com/alphonsasooter)
 - 📧 Email: alphonsasooter@gmail.com
 
----
-
-## 🙏 Acknowledgments
-
-- **Bootstrap Team** - For the amazing CSS framework
-- **PHP Community** - For excellent documentation
-- **XAMPP Team** - For the local development environment
-- **GitHub** - For hosting this project
-- **Stack Overflow** - For countless solutions
-- **All Contributors** - Thank you for your contributions!
-
 
 ---
 
