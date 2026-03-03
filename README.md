@@ -253,34 +253,6 @@ if (password_verify($input_password, $stored_hash)) {
 - Automatic salt generation
 - Resistant to rainbow table attacks
 
-
-
----
-
-## 🔗 API Endpoints
-
-Although this is not a REST API, here are the main endpoints:
-
-### Authentication
-
-| Method | Endpoint              | Description        |
-|--------|-----------------------|--------------------|
-| GET    | `/auth/login.php`     | Login page         |
-| POST   | `/auth/login.php`     | Process login      |
-| GET    | `/auth/logout.php`    | Logout and destroy |
-
-### Students
-
-| Method | Endpoint                      | Description           |
-|--------|-------------------------------|-----------------------|
-| GET    | `/dashboard/index.php`        | List all students     |
-| GET    | `/dashboard/index.php?search` | Search students       |
-| GET    | `/dashboard/add_student.php`  | Add student form      |
-| POST   | `/dashboard/add_student.php`  | Create student        |
-| GET    | `/dashboard/edit_student.php` | Edit student form     |
-| POST   | `/dashboard/edit_student.php` | Update student        |
-| GET    | `/dashboard/delete_student.php` | Delete student      |
-
 ---
 
 ## 🎯 Future Improvements
