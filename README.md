@@ -373,13 +373,13 @@ If you find this project helpful, please give it a ⭐!
 
 ___
 
-<div>
+<p align="center">
+  Built with ❤️ using PHP, MySQL, and Bootstrap
+</p>
 
-  **Built with ❤️ using PHP, MySQL, and Bootstrap**
-
-**Made in 2024**
-
-</div>
+<p align="center">
+  Made in 2024
+</p>
 
 ---
 
