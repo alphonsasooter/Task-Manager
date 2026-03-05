@@ -370,11 +370,12 @@ If you find this project helpful, please give it a ⭐!
 </p>
 
 </div>
+
 ___
 
 <div>
 
-**Built with ❤️ using PHP, MySQL, and Bootstrap**
+  **Built with ❤️ using PHP, MySQL, and Bootstrap**
 
 **Made in 2024**
 
