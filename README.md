@@ -355,16 +355,18 @@ ___
 
 
 ---
-
 <div align="center">
 
-## ⭐ Show Your Support
+### ⭐ Show Your Support
 
 If you find this project helpful, please give it a ⭐!
 
-![GitHub Stars](https://img.shields.io/github/stars/alphonsasooter/Task-Manager?style=social)
-![GitHub Forks](https://img.shields.io/github/forks/alphonsasooter/Task-Manager?style=social)
-![GitHub Watchers](https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?style=social)
+<img src="https://img.shields.io/github/stars/alphonsasooter/Task-Manager?style=social"/>
+<img src="https://img.shields.io/github/forks/alphonsasooter/Task-Manager?style=social"/>
+<img src="https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?style=social"/>
+
+</div>
+
 
 **Built with ❤️ using PHP, MySQL, and Bootstrap**
 
