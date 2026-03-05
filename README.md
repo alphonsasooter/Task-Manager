@@ -361,13 +361,18 @@ ___
 ### ⭐ Show Your Support
 
 If you find this project helpful, please give it a ⭐!
+<p align="center">
 
-<img src="https://img.shields.io/github/stars/alphonsasooter/Task-Manager?label=Stars&style=for-the-badge"/>
-<img src="https://img.shields.io/github/forks/alphonsasooter/Task-Manager?label=Forks&style=for-the-badge"/>
-<img src="https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?label=Watchers&style=for-the-badge"/>
+<img src="https://img.shields.io/github/stars/alphonsasooter/Task-Manager?label=STARS&style=for-the-badge"/>
+<img src="https://img.shields.io/github/forks/alphonsasooter/Task-Manager?label=FORKS&style=for-the-badge"/>
+<img src="https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?label=WATCHERS&style=for-the-badge"/>
+
+</p>
 
 </div>
+___
 
+<div>
 
 **Built with ❤️ using PHP, MySQL, and Bootstrap**
 
