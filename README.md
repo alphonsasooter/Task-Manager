@@ -362,9 +362,9 @@ ___
 
 If you find this project helpful, please give it a ⭐!
 
-![GitHub stars](https://img.shields.io/github/stars/alphonsasooter/Task-Manager?style=social)
-![GitHub forks](https://img.shields.io/github/forks/alphonsasooter/Task-Manager?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?style=social)
+![GitHub Stars](https://img.shields.io/github/stars/alphonsasooter/Task-Manager?style=social)
+![GitHub Forks](https://img.shields.io/github/forks/alphonsasooter/Task-Manager?style=social)
+![GitHub Watchers](https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?style=social)
 
 **Built with ❤️ using PHP, MySQL, and Bootstrap**
 
