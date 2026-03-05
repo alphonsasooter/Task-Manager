@@ -355,15 +355,16 @@ ___
 
 
 ---
+
 <div align="center">
 
 ### ⭐ Show Your Support
 
 If you find this project helpful, please give it a ⭐!
 
-<img src="https://img.shields.io/github/stars/alphonsasooter/Task-Manager?style=social"/>
-<img src="https://img.shields.io/github/forks/alphonsasooter/Task-Manager?style=social"/>
-<img src="https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?style=social"/>
+<img src="https://img.shields.io/github/stars/alphonsasooter/Task-Manager?label=Stars&style=for-the-badge"/>
+<img src="https://img.shields.io/github/forks/alphonsasooter/Task-Manager?label=Forks&style=for-the-badge"/>
+<img src="https://img.shields.io/github/watchers/alphonsasooter/Task-Manager?label=Watchers&style=for-the-badge"/>
 
 </div>
 
