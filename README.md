@@ -135,44 +135,6 @@ student-portal/
 
 ---
 
-## 📊 Database Schema
-
-### `students` Table
-
-| Column      | Type           | Description                    |
-|-------------|----------------|--------------------------------|
-| id          | INT (PK)       | Auto-increment primary key     |
-| fullname    | VARCHAR(100)   | Student's full name            |
-| email       | VARCHAR(100)   | Student's email (unique)       |
-| phone       | VARCHAR(20)    | Student's phone number         |
-| course      | VARCHAR(100)   | Enrolled course                |
-| created_at  | TIMESTAMP      | Record creation timestamp      |
-| updated_at  | TIMESTAMP      | Last update timestamp          |
-
-### `admins` Table
-
-| Column      | Type           | Description                    |
-|-------------|----------------|--------------------------------|
-| id          | INT (PK)       | Auto-increment primary key     |
-| username    | VARCHAR(50)    | Admin username (unique)        |
-| password    | VARCHAR(255)   | Hashed password                |
-| email       | VARCHAR(100)   | Admin email                    |
-| fullname    | VARCHAR(100)   | Admin full name                |
-| created_at  | TIMESTAMP      | Account creation timestamp     |
-| last_login  | TIMESTAMP      | Last login timestamp           |
-
-### `activity_logs` Table (Optional)
-
-| Column       | Type         | Description                    |
-|--------------|--------------|--------------------------------|
-| id           | INT (PK)     | Auto-increment primary key     |
-| admin_id     | INT (FK)     | Admin who performed action     |
-| action       | VARCHAR(50)  | Action type (ADD/EDIT/DELETE)  |
-| description  | TEXT         | Action description             |
-| ip_address   | VARCHAR(45)  | User's IP address              |
-| created_at   | TIMESTAMP    | Action timestamp               |
-
----
 
 ## 📖 Usage
 
