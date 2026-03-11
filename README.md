@@ -196,27 +196,6 @@ student-portal/
 
 ---
 
-## 🔒 Security Features
-
-### Password Security
-
-```php
-// Hashing password (during registration)
-$hashed_password = password_hash($password, PASSWORD_DEFAULT);
-
-// Verifying password (during login)
-if (password_verify($input_password, $stored_hash)) {
-    // Login successful
-}
-```
-
-**Benefits:**
-- Uses bcrypt algorithm
-- Automatic salt generation
-- Resistant to rainbow table attacks
-
----
-
 ## 🎯 Future Improvements
 
 ### 🔜 Planned Features
