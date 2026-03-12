@@ -196,25 +196,6 @@ student-portal/
 
 ---
 
-## 🎯 Future Improvements
-
-### 🔜 Planned Features
-
-- [ ] **Pagination** - Handle large student lists efficiently
-- [ ] **Profile Photos** - Upload and display student photos
-- [ ] **Change Password** - Admin password reset functionality
-- [ ] **Email Notifications** - Send emails on student registration
-- [ ] **Export Data** - Export students list to CSV/Excel/PDF
-- [ ] **Bulk Upload** - Import multiple students from CSV
-- [ ] **Role Management** - Multiple admin roles (Admin, Staff, Viewer)
-- [ ] **Student Dashboard** - Students can view their own profiles
-- [ ] **Attendance Tracking** - Mark and view attendance
-- [ ] **Grade Management** - Add and manage student grades
-- [ ] **Advanced Search** - Filter by multiple criteria
-- [ ] **Dark Mode** - Theme switcher
-- [ ] **Mobile App** - React Native or Flutter app
-- [ ] **API Integration** - RESTful API for external access
-- [ ] **Two-Factor Authentication** - Enhanced security
 
 ### 💡 Technical Improvements
 
