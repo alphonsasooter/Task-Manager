@@ -196,22 +196,6 @@ student-portal/
 
 ---
 
-
-### 💡 Technical Improvements
-
-- [ ] Convert to MVC architecture (Laravel/CodeIgniter)
-- [ ] Add unit tests (PHPUnit)
-- [ ] Implement caching (Redis)
-- [ ] Add API rate limiting
-- [ ] Implement soft deletes
-- [ ] Add database migrations
-- [ ] Use environment variables (.env)
-- [ ] Add logging system
-- [ ] Implement queue system for emails
-- [ ] Add real-time notifications (WebSocket)
-
----
-
 ## 🤝 Contributing
 
 Contributions are welcome! Here's how you can help:
