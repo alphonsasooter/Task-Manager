@@ -198,8 +198,6 @@ student-portal/
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how you can help:
-
 ### How to Contribute
 
 1. **Fork the repository**
