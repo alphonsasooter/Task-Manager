@@ -230,13 +230,6 @@ student-portal/
    - Reference any related issues
    - Wait for review
 
-### Code Style Guidelines
-
-- **PHP:** Follow PSR-12 coding standards
-- **HTML:** Use semantic HTML5 elements
-- **CSS:** Use BEM naming convention
-- **JavaScript:** Use ES6+ features
-- **SQL:** Use uppercase for keywords
 
 ### Reporting Bugs
 
