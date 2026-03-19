@@ -230,16 +230,6 @@ student-portal/
    - Reference any related issues
    - Wait for review
 
-
-### Reporting Bugs
-
-Found a bug? Please open an issue with:
-- Clear description of the problem
-- Steps to reproduce
-- Expected vs actual behavior
-- Screenshots (if applicable)
-- Your environment (OS, PHP version, etc.)
-
 ___
 
 
