@@ -87,12 +87,6 @@ Student Portal is a comprehensive **CRUD (Create, Read, Update, Delete)** web ap
 </td>
 </tr>
 </table>
-
-### Development Tools
-- **XAMPP** - Local development environment (Apache + MySQL)
-- **phpMyAdmin** - Database management
-- **VS Code** - Code editor (recommended)
-
 ---
 
 ## 📁 Project Structure
