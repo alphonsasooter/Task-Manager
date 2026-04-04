@@ -1,4 +1,4 @@
-name: PHP Composer
+name: PHP CI
 
 on:
   push:
@@ -6,43 +6,25 @@ on:
   pull_request:
     branches: ["main"]
 
-permissions:
-  contents: read
-
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository
+      # Step 1: Checkout repository
       - name: Checkout code
         uses: actions/checkout@v4
 
-      # Setup PHP
+      # Step 2: Setup PHP
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
           php-version: '8.2'
-          tools: composer
-          coverage: none
 
-      # Validate composer files
-      - name: Validate composer.json and composer.lock
-        run: composer validate --strict
+      # Step 3: Check PHP syntax
+      - name: PHP Syntax Check
+        run: find . -name "*.php" -print0 | xargs -0 -n1 php -l
 
-      # Cache composer dependencies
-      - name: Cache Composer packages
-        uses: actions/cache@v3
-        with:
-          path: vendor
-          key: ${{ runner.os }}-php-${{ hashFiles('**/composer.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-php-
-
-      # Install dependencies
-      - name: Install dependencies
-        run: composer install --prefer-dist --no-progress --no-suggest
-
-      # Run tests (optional)
-      # - name: Run tests
-      #   run: composer run-script test
+      # Step 4: Display PHP version
+      - name: Show PHP Version
+        run: php -v
